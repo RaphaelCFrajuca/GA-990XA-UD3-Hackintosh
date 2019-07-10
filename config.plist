@@ -2,11 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>#DisableDrivers</key>
-	<array>
-		<string>CsmVideoDxe</string>
-		<string>VBoxExt4</string>
-	</array>
 	<key>ACPI</key>
 	<dict>
 		<key>#PatchAPIC</key>
@@ -67,7 +62,7 @@
 				<key>AddDTGP</key>
 				<true/>
 				<key>AddHDMI</key>
-				<false/>
+				<true/>
 				<key>AddIMEI</key>
 				<false/>
 				<key>AddMCHC</key>
@@ -135,13 +130,9 @@
 					<key>Disabled</key>
 					<true/>
 					<key>Find</key>
-					<data>
-					UFhTWAhfQURSAAhfUFJXEgYC
-					</data>
+					<data>UFhTWAhfQURSAAhfUFJXEgYC</data>
 					<key>Replace</key>
-					<data>
-					UFhTWAhfQURSAAhfU1VOCgQIX1BSVxIGAg==
-					</data>
+					<data>UFhTWAhfQURSAAhfU1VOCgQIX1BSVxIGAg==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -149,13 +140,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					R0ZYMA==
-					</data>
+					<data>R0ZYMA==</data>
 					<key>Replace</key>
-					<data>
-					SUdQVQ==
-					</data>
+					<data>SUdQVQ==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -163,13 +150,9 @@
 					<key>Disabled</key>
 					<true/>
 					<key>Find</key>
-					<data>
-					SERFRg==
-					</data>
+					<data>SERFRg==</data>
 					<key>Replace</key>
-					<data>
-					QVpBTA==
-					</data>
+					<data>QVpBTA==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -177,13 +160,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					X0RTTQ==
-					</data>
+					<data>X0RTTQ==</data>
 					<key>Replace</key>
-					<data>
-					WkRTTQ==
-					</data>
+					<data>WkRTTQ==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -191,13 +170,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					SEVDSQ==
-					</data>
+					<data>SEVDSQ==</data>
 					<key>Replace</key>
-					<data>
-					SU1FSQ==
-					</data>
+					<data>SU1FSQ==</data>
 				</dict>
 			</array>
 			<key>ReuseFFFF</key>
@@ -269,6 +244,14 @@
 			<integer>1</integer>
 			<key>#UseSystemIO</key>
 			<false/>
+			<key>EnableC2</key>
+			<true/>
+			<key>EnableC4</key>
+			<true/>
+			<key>EnableC6</key>
+			<true/>
+			<key>EnableC7</key>
+			<true/>
 			<key>Generate</key>
 			<dict>
 				<key>#APLF</key>
@@ -278,7 +261,7 @@
 				<key>#PluginType</key>
 				<false/>
 				<key>CStates</key>
-				<false/>
+				<true/>
 				<key>PStates</key>
 				<false/>
 			</dict>
@@ -363,9 +346,7 @@
 				<key>Key</key>
 				<string>framebuffer-patch-enable</string>
 				<key>Value</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 			</dict>
 			<dict>
 				<key>Device</key>
@@ -375,9 +356,7 @@
 				<key>Key</key>
 				<string>framebuffer-stolenmem</string>
 				<key>Value</key>
-				<data>
-				AAAwAQ==
-				</data>
+				<data>AAAwAQ==</data>
 			</dict>
 			<dict>
 				<key>Device</key>
@@ -387,9 +366,7 @@
 				<key>Key</key>
 				<string>framebuffer-fbmem</string>
 				<key>Value</key>
-				<data>
-				AACQAA==
-				</data>
+				<data>AACQAA==</data>
 			</dict>
 			<dict>
 				<key>Device</key>
@@ -399,9 +376,7 @@
 				<key>Key</key>
 				<string>framebuffer-unifiedmem</string>
 				<key>Value</key>
-				<data>
-				AAAAgA==
-				</data>
+				<data>AAAAgA==</data>
 			</dict>
 		</array>
 		<key>#DisableFunctions</key>
@@ -436,57 +411,35 @@
 				<key>#Comment</key>
 				<string>This is USB3.0</string>
 				<key>AAPL,clock-id</key>
-				<data>
-				AA==
-				</data>
+				<data>AA==</data>
 				<key>AAPL,current-available</key>
-				<data>
-				sAQ=
-				</data>
+				<data>sAQ=</data>
 				<key>AAPL,current-extra</key>
-				<data>
-				vAI=
-				</data>
+				<data>vAI=</data>
 				<key>AAPL,current-in-sleep</key>
-				<data>
-				6AM=
-				</data>
+				<data>6AM=</data>
 				<key>built-in</key>
-				<data>
-				AA==
-				</data>
+				<data>AA==</data>
 				<key>device_type</key>
 				<string>XHCI</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x19,0x0)</key>
 			<dict>
 				<key>built-in</key>
-				<data>
-				AQ==
-				</data>
+				<data>AQ==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1a,0x0)</key>
 			<dict>
 				<key>AAPL,clock-id</key>
-				<data>
-				AQ==
-				</data>
+				<data>AQ==</data>
 				<key>AAPL,current-available</key>
-				<data>
-				sAQ=
-				</data>
+				<data>sAQ=</data>
 				<key>AAPL,current-extra</key>
-				<data>
-				vAI=
-				</data>
+				<data>vAI=</data>
 				<key>AAPL,current-in-sleep</key>
-				<data>
-				6AM=
-				</data>
+				<data>6AM=</data>
 				<key>built-in</key>
-				<data>
-				AA==
-				</data>
+				<data>AA==</data>
 				<key>device_type</key>
 				<string>EHCI</string>
 			</dict>
@@ -504,9 +457,7 @@
 				<key>name</key>
 				<string>AirPort Extreme</string>
 				<key>subsystem-vendor-id</key>
-				<data>
-				axAAAA==
-				</data>
+				<data>axAAAA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1c,0x5)/Pci(0x0,0x0)</key>
 			<dict>
@@ -519,86 +470,49 @@
 				<key>name</key>
 				<string>AirPort Extreme</string>
 				<key>subsystem-vendor-id</key>
-				<data>
-				axAAAA==
-				</data>
+				<data>axAAAA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1d,0x0)</key>
 			<dict>
 				<key>AAPL,clock-id</key>
-				<data>
-				Ag==
-				</data>
+				<data>Ag==</data>
 				<key>AAPL,current-available</key>
-				<data>
-				sAQ=
-				</data>
+				<data>sAQ=</data>
 				<key>AAPL,current-extra</key>
-				<data>
-				vAI=
-				</data>
+				<data>vAI=</data>
 				<key>AAPL,current-in-sleep</key>
-				<data>
-				6AM=
-				</data>
+				<data>6AM=</data>
 				<key>built-in</key>
-				<data>
-				AA==
-				</data>
+				<data>AA==</data>
 				<key>device_type</key>
 				<string>EHCI</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>#AAPL00,override-no-connect</key>
-				<data>
-				AP///////wANr2kUAAAAABYWAQSgHxF4AtFFm1lXjisj
-				UFQAAAABAQEBAQEBAQEBAQEBAQEBEhtWclAADDAQZCYA
-				Na4QAAAaDBJWclAADDAQIiYANa4QAAAaAAAA/gA3SlJU
-				OYAxNDBCR0UKAAAAAAAAQTGUAAAAAAEBCiAgAMU=
-				</data>
+				<data>AP///////wANr2kUAAAAABYWAQSgHxF4AtFFm1lXjisjUFQAAAABAQEBAQEBAQEBAQEBAQEBEhtWclAADDAQZCYANa4QAAAaDBJWclAADDAQIiYANa4QAAAaAAAA/gA3SlJUOYAxNDBCR0UKAAAAAAAAQTGUAAAAAAEBCiAgAMU=</data>
 				<key>@0,backlight-control</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>AAPL,HasLid</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>AAPL,HasPanel</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>AAPL,backlight-control</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>AAPL,ig-platform-id</key>
-				<data>
-				AwBmAQ==
-				</data>
+				<data>AwBmAQ==</data>
 				<key>class-code</key>
-				<data>
-				AAADAA==
-				</data>
+				<data>AAADAA==</data>
 				<key>device-id</key>
-				<data>
-				ZgEAAA==
-				</data>
+				<data>ZgEAAA==</data>
 				<key>graphic-options</key>
-				<data>
-				DAAAAA==
-				</data>
+				<data>DAAAAA==</data>
 				<key>model</key>
 				<string>Intel HD Graphics 4000</string>
 				<key>subsystem-vendor-id</key>
-				<data>
-				axAAAA==
-				</data>
+				<data>axAAAA==</data>
 				<key>vendor-id</key>
-				<data>
-				hoAAAA==
-				</data>
+				<data>hoAAAA==</data>
 			</dict>
 		</dict>
 		<key>#SetIntelBacklight</key>
@@ -623,13 +537,18 @@
 			<key>FixOwnership</key>
 			<true/>
 			<key>HighCurrent</key>
-			<false/>
+			<true/>
 			<key>Inject</key>
 			<true/>
 		</dict>
 		<key>UseIntelHDMI</key>
 		<false/>
 	</dict>
+	<key>DisableDrivers</key>
+	<array>
+		<string>AppleKeyAggregator</string>
+		<string>AppleImageCodec</string>
+	</array>
 	<key>GUI</key>
 	<dict>
 		<key>#ConsoleMode</key>
@@ -759,7 +678,7 @@
 		<key>PlayAsync</key>
 		<false/>
 		<key>ScreenResolution</key>
-		<string>1366x768</string>
+		<string>1920x1080</string>
 		<key>ShowOptimus</key>
 		<false/>
 		<key>Theme</key>
@@ -800,13 +719,9 @@
 		<array>
 			<dict>
 				<key>Find</key>
-				<data>
-				gAeoAqAF
-				</data>
+				<data>gAeoAqAF</data>
 				<key>Replace</key>
-				<data>
-				gAeoAjgE
-				</data>
+				<data>gAeoAjgE</data>
 			</dict>
 		</array>
 		<key>#RadeonDeInit</key>
@@ -822,12 +737,7 @@
 		<key>EDID</key>
 		<dict>
 			<key>#Custom</key>
-			<data>
-			AP///////wAGECGSAAAAAAASAQOAIRV4CunVmVlTjigmUFQAAAAB
-			AQEBAQEBAQEBAQEBAQEB3iGgcFCEHzAgIFYAS88QAAAY3iGgcFCE
-			HzAgIFYAS88QAAAAAAAA/gBXNjU3RwAxNTRXUDEKAAAA/gAjMz1I
-			ZYSq/wIBCiAgAJo=
-			</data>
+			<data>AP///////wAGECGSAAAAAAASAQOAIRV4CunVmVlTjigmUFQAAAABAQEBAQEBAQEBAQEBAQEB3iGgcFCEHzAgIFYAS88QAAAY3iGgcFCEHzAgIFYAS88QAAAAAAAA/gBXNjU3RwAxNTRXUDEKAAAA/gAjMz1IZYSq/wIBCiAgAJo=</data>
 			<key>#HorizontalSyncPulseWidth</key>
 			<string>0x11</string>
 			<key>#Inject</key>
@@ -839,6 +749,8 @@
 			<key>#VideoInputSignal</key>
 			<string>0xA1</string>
 		</dict>
+		<key>PatchVBios</key>
+		<true/>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -856,15 +768,11 @@
 				<key>Disabled</key>
 				<true/>
 				<key>Find</key>
-				<data>
-				RXh0ZXJuYWw=
-				</data>
+				<data>RXh0ZXJuYWw=</data>
 				<key>MatchOS</key>
 				<string>All</string>
 				<key>Replace</key>
-				<data>
-				SW50ZXJuYWw=
-				</data>
+				<data>SW50ZXJuYWw=</data>
 			</dict>
 		</array>
 		<key>#FakeCPUID</key>
@@ -880,15 +788,11 @@
 				<key>Disabled</key>
 				<true/>
 				<key>Find</key>
-				<data>
-				SGVhZHBob25lcwA=
-				</data>
+				<data>SGVhZHBob25lcwA=</data>
 				<key>Name</key>
 				<string>VoodooHDA</string>
 				<key>Replace</key>
-				<data>
-				VGVsZXBob25lcwA=
-				</data>
+				<data>VGVsZXBob25lcwA=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -906,29 +810,21 @@
 				<key>Comment</key>
 				<string>Make all drives to be internal</string>
 				<key>Find</key>
-				<data>
-				RXh0ZXJuYWw=
-				</data>
+				<data>RXh0ZXJuYWw=</data>
 				<key>Name</key>
 				<string>AppleAHCIPort</string>
 				<key>Replace</key>
-				<data>
-				SW50ZXJuYWw=
-				</data>
+				<data>SW50ZXJuYWw=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>TRIM function for non-Apple SSDs</string>
 				<key>Find</key>
-				<data>
-				QVBQTEUgU1NEAA==
-				</data>
+				<data>QVBQTEUgU1NEAA==</data>
 				<key>Name</key>
 				<string>IOAHCIBlockStorage</string>
 				<key>Replace</key>
-				<data>
-				AAAAAAAAAAAAAA==
-				</data>
+				<data>AAAAAAAAAAAAAA==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -936,19 +832,13 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				AAQAAAQDAAAAAQAAIQMCBAQAAAAUAgAAAAEAAAAABAMQ
-				AAAAEAAAAAABAAAAAAAB
-				</data>
+				<data>AAQAAAQDAAAAAQAAIQMCBAQAAAAUAgAAAAEAAAAABAMQAAAAEAAAAAABAAAAAAAB</data>
 				<key>MatchOS</key>
 				<string>10.9,10.10,10.11</string>
 				<key>Name</key>
 				<string>AMD6000Controller</string>
 				<key>Replace</key>
-				<data>
-				BAAAABQCAAAAAQAAAAAEBAAEAAAEAwAAAAEAABECAQUA
-				AAAAAAAAAAAAAAAAAAAA
-				</data>
+				<data>BAAAABQCAAAAAQAAAAAEBAAEAAAEAwAAAAEAABECAQUAAAAAAAAAAAAAAAAAAAAA</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -956,17 +846,13 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				SEQgNnh4eA==
-				</data>
+				<data>SEQgNnh4eA==</data>
 				<key>MatchOS</key>
 				<string>10.12,10.13</string>
 				<key>Name</key>
 				<string>AMD6000Controller</string>
 				<key>Replace</key>
-				<data>
-				SEQgNjQ1MA==
-				</data>
+				<data>SEQgNjQ1MA==</data>
 			</dict>
 		</array>
 		<key>AppleIntelCPUPM</key>
@@ -989,15 +875,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				igKEwHRC
-				</data>
+				<data>igKEwHRC</data>
 				<key>MatchOS</key>
 				<string>10.14</string>
 				<key>Replace</key>
-				<data>
-				igKEwOtC
-				</data>
+				<data>igKEwOtC</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1005,15 +887,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				igKEwHRE
-				</data>
+				<data>igKEwHRE</data>
 				<key>MatchOS</key>
 				<string>10.13</string>
 				<key>Replace</key>
-				<data>
-				igKEwOtE
-				</data>
+				<data>igKEwOtE</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1021,15 +899,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				AIoChMB0
-				</data>
+				<data>AIoChMB0</data>
 				<key>MatchOS</key>
 				<string>10.14.4,10.14.5</string>
 				<key>Replace</key>
-				<data>
-				AIoChMDr
-				</data>
+				<data>AIoChMDr</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1037,15 +911,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				uaABAAAPMg==
-				</data>
+				<data>uaABAAAPMg==</data>
 				<key>MatchOS</key>
 				<string>10.13.6,10.14.x</string>
 				<key>Replace</key>
-				<data>
-				Dx+AAAAAAA==
-				</data>
+				<data>Dx+AAAAAAA==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1053,15 +923,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				6Ar2//+c
-				</data>
+				<data>6Ar2//+c</data>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
-				<data>
-				Dx9EAACc
-				</data>
+				<data>Dx9EAACc</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1069,15 +935,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				6Jn1//8=
-				</data>
+				<data>6Jn1//8=</data>
 				<key>MatchOS</key>
 				<string>10.14.4,10.14.5</string>
 				<key>Replace</key>
-				<data>
-				Dx9EAAA=
-				</data>
+				<data>Dx9EAAA=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1085,21 +947,13 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				McAx2zHJMdIPokGJxkGJ0YM9ygWNAAB0GEiNPZKSXwAx
-				9jHAQYnIRInyidno6IlYAEGD/gQPgvoBAABFMfbrDGYP
-				H4QAAAAAAA==
-				</data>
+				<data>McAx2zHJMdIPokGJxkGJ0YM9ygWNAAB0GEiNPZKSXwAx9jHAQYnIRInyidno6IlYAEGD/gQPgvoBAABFMfbrDGYPH4QAAAAAAA==</data>
 				<key>MatchBuild</key>
 				<string>17G65,17G66</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
-				<data>
-				uB0AAIAx2zHJMdIPokGJxkGJ0YM9xwWNAAB0G0iNPY+S
-				XwC+HQAAgDHAQYnIRInyidno4olYAEGD/gQPgvQBAABF
-				MfbrBg8fAA==
-				</data>
+				<data>uB0AAIAx2zHJMdIPokGJxkGJ0YM9xwWNAAB0G0iNPY+SXwC+HQAAgDHAQYnIRInyidno4olYAEGD/gQPgvQBAABFMfbrBg8fAA==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1107,21 +961,13 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				McAx2zHJMdIPokGJxkGJ0YM9yv2MAAB0GEiNPd+JXwAx
-				9jHAQYnIRInyidnoqH5YAEGD/gQPgvoBAABFMfbrDGYP
-				H4QAAAAAAA==
-				</data>
+				<data>McAx2zHJMdIPokGJxkGJ0YM9yv2MAAB0GEiNPd+JXwAx9jHAQYnIRInyidnoqH5YAEGD/gQPgvoBAABFMfbrDGYPH4QAAAAAAA==</data>
 				<key>MatchBuild</key>
 				<string>17G6029,17G6030</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
-				<data>
-				uB0AAIAx2zHJMdIPokGJxkGJ0YM9x/2MAAB0G0iNPdyJ
-				XwC+HQAAgDHAQYnIRInyidnoon5YAEGD/gQPgvQBAABF
-				MfbrBg8fAA==
-				</data>
+				<data>uB0AAIAx2zHJMdIPokGJxkGJ0YM9x/2MAAB0G0iNPdyJXwC+HQAAgDHAQYnIRInyidnoon5YAEGD/gQPgvQBAABFMfbrBg8fAA==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1129,21 +975,13 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				McAx2zHJMdIPokGJxkGJ0YM92gaNAAB0GEiNPRmWXwAx
-				9jHAQYnIRInyidnouIpYAEGD/gQPgvoBAABFMfbrDGYP
-				H4QAAAAAAA==
-				</data>
+				<data>McAx2zHJMdIPokGJxkGJ0YM92gaNAAB0GEiNPRmWXwAx9jHAQYnIRInyidnouIpYAEGD/gQPgvoBAABFMfbrDGYPH4QAAAAAAA==</data>
 				<key>MatchBuild</key>
 				<string>17G7024</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
-				<data>
-				uB0AAIAx2zHJMdIPokGJxkGJ0YM91waNAAB0G0iNPRaW
-				XwC+HQAAgDHAQYnIRInyidnoaopYAEGD/gQPgvQBAABF
-				MfbrBg8fAA==
-				</data>
+				<data>uB0AAIAx2zHJMdIPokGJxkGJ0YM91waNAAB0G0iNPRaWXwC+HQAAgDHAQYnIRInyidnoaopYAEGD/gQPgvQBAABFMfbrBg8fAA==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1151,19 +989,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				McAx2zHJMdIPokGJxoM9re2XAAB0G0GJ0UiNPRehZwAx
-				9jHAQYnIRInyidnoWP1fAEGD/gQPgvgBAABFMfbrDGYP
-				H4QAAAAAAA==
-				</data>
+				<data>McAx2zHJMdIPokGJxoM9re2XAAB0G0GJ0UiNPRehZwAx9jHAQYnIRInyidnoWP1fAEGD/gQPgvgBAABFMfbrDGYPH4QAAAAAAA==</data>
 				<key>MatchOS</key>
 				<string>10.14.4</string>
 				<key>Replace</key>
-				<data>
-				uB0AAIAx2zHJMdIPokGJxkGJ0YM9p+2XAAB0G0iNPRSh
-				ZwC+HQAAgDHAQYnIRInyidnoUv1fAEGD/gQPgvIBAABF
-				MfbrBg8fAA==
-				</data>
+				<data>uB0AAIAx2zHJMdIPokGJxkGJ0YM9p+2XAAB0G0iNPRShZwC+HQAAgDHAQYnIRInyidnoUv1fAEGD/gQPgvIBAABFMfbrBg8fAA==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1171,19 +1001,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				McAx2zHJMdIPokGJxoM9JWKYAAB0G0GJ0UiNPRy0ZwAx
-				9jHAQYnIRInyidnoiBBgAEGD/gQPgvgBAABFMfbrDGYP
-				H4QAAAAAAA==
-				</data>
+				<data>McAx2zHJMdIPokGJxoM9JWKYAAB0G0GJ0UiNPRy0ZwAx9jHAQYnIRInyidnoiBBgAEGD/gQPgvgBAABFMfbrDGYPH4QAAAAAAA==</data>
 				<key>MatchOS</key>
 				<string>10.14.5</string>
 				<key>Replace</key>
-				<data>
-				uB0AAIAx2zHJMdIPokGJxkGJ0YM9H2KYAAB0G0iNPRm0
-				ZwC+HQAAgDHAQYnIRInyidnoghBgAEGD/gQPgvIBAABF
-				MfbrBg8fAA==
-				</data>
+				<data>uB0AAIAx2zHJMdIPokGJxkGJ0YM9H2KYAAB0G0iNPRm0ZwC+HQAAgDHAQYnIRInyidnoghBgAEGD/gQPgvIBAABFMfbrBg8fAA==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1191,31 +1013,23 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				uAQAAABEifFEiQ==
-				</data>
+				<data>uAQAAABEifFEiQ==</data>
 				<key>MatchOS</key>
 				<string>10.13.6,10.14.x</string>
 				<key>Replace</key>
-				<data>
-				uB0AAIBEifFEiQ==
-				</data>
+				<data>uB0AAIBEifFEiQ==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_cache_info - don't set cpuid_cores_per_package</string>
+				<string>algrey - cpuid_set_cache_info - don&apos;t set cpuid_cores_per_package</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				wega/8A=
-				</data>
+				<data>wega/8A=</data>
 				<key>MatchOS</key>
 				<string>10.13.6,10.14.x</string>
 				<key>Replace</key>
-				<data>
-				Dx8A6wY=
-				</data>
+				<data>Dx8A6wY=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1223,15 +1037,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				uYsAAAAxwDHSDzA=
-				</data>
+				<data>uYsAAAAxwDHSDzA=</data>
 				<key>MatchOS</key>
 				<string>10.13.6,10.14.x</string>
 				<key>Replace</key>
-				<data>
-				Zg8fhAAAAAAAZpA=
-				</data>
+				<data>Zg8fhAAAAAAAZpA=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1239,15 +1049,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				uYsAAAAPMg==
-				</data>
+				<data>uYsAAAAPMg==</data>
 				<key>MatchOS</key>
 				<string>10.13.6,10.14.x</string>
 				<key>Replace</key>
-				<data>
-				uroAAABmkA==
-				</data>
+				<data>uroAAABmkA==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1255,15 +1061,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				uRcAAAAPMsHqEoDiBw==
-				</data>
+				<data>uRcAAAAPMsHqEoDiBw==</data>
 				<key>MatchOS</key>
 				<string>10.13.6,10.14.x</string>
 				<key>Replace</key>
-				<data>
-				sgFmDx+EAAAAAABmkA==
-				</data>
+				<data>sgFmDx+EAAAAAABmkA==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1271,15 +1073,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				ADoPgg==
-				</data>
+				<data>ADoPgg==</data>
 				<key>MatchOS</key>
 				<string>10.13.6,10.14.x</string>
 				<key>Replace</key>
-				<data>
-				AAAPgg==
-				</data>
+				<data>AAAPgg==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1287,15 +1085,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				R2VudWluZUludGVsAA==
-				</data>
+				<data>R2VudWluZUludGVsAA==</data>
 				<key>MatchOS</key>
 				<string>10.13.6,10.14.x</string>
 				<key>Replace</key>
-				<data>
-				QXV0aGVudGljQU1EAA==
-				</data>
+				<data>QXV0aGVudGljQU1EAA==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1303,17 +1097,13 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				MduAPbgLjQAGdVw=
-				</data>
+				<data>MduAPbgLjQAGdVw=</data>
 				<key>MatchBuild</key>
 				<string>17G65,17G66</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
-				<data>
-				u7xP6njpXQAAAJA=
-				</data>
+				<data>u7xP6njpXQAAAJA=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1321,17 +1111,13 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				MduAPbgDjQAGdVw=
-				</data>
+				<data>MduAPbgDjQAGdVw=</data>
 				<key>MatchBuild</key>
 				<string>17G6029,17G6030</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
-				<data>
-				u7xP6njpXQAAAJA=
-				</data>
+				<data>u7xP6njpXQAAAJA=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1339,17 +1125,13 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				MduAPagMjQAGdVw=
-				</data>
+				<data>MduAPagMjQAGdVw=</data>
 				<key>MatchBuild</key>
 				<string>17G7024</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
-				<data>
-				u7xP6njpXQAAAJA=
-				</data>
+				<data>u7xP6njpXQAAAJA=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1357,15 +1139,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				MduAPZjzlwAGdVw=
-				</data>
+				<data>MduAPZjzlwAGdVw=</data>
 				<key>MatchOS</key>
 				<string>10.14.4</string>
 				<key>Replace</key>
-				<data>
-				u7xP6njpXQAAAJA=
-				</data>
+				<data>u7xP6njpXQAAAJA=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1373,15 +1151,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				MduAPchomAAGdVw=
-				</data>
+				<data>MduAPchomAAGdVw=</data>
 				<key>MatchOS</key>
 				<string>10.14.5</string>
 				<key>Replace</key>
-				<data>
-				u7xP6njpXQAAAJA=
-				</data>
+				<data>u7xP6njpXQAAAJA=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1389,17 +1163,13 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				PbxP6nh1NosFyAqNAIkFiguNAIsNwAqNAOsW
-				</data>
+				<data>PbxP6nh1NosFyAqNAIkFiguNAIsNwAqNAOsW</data>
 				<key>MatchBuild</key>
 				<string>17G65,17G66</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
-				<data>
-				uAgAAIAx2zHJMdIPokGJzkEPtsb/wA8fAOtS
-				</data>
+				<data>uAgAAIAx2zHJMdIPokGJzkEPtsb/wA8fAOtS</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1407,17 +1177,13 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				PbxP6nh1NosFyAKNAIkFigONAIsNwAKNAOsW
-				</data>
+				<data>PbxP6nh1NosFyAKNAIkFigONAIsNwAKNAOsW</data>
 				<key>MatchBuild</key>
 				<string>17G6029,17G6030</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
-				<data>
-				uAgAAIAx2zHJMdIPokGJzkEPtsb/wA8fAOtS
-				</data>
+				<data>uAgAAIAx2zHJMdIPokGJzkEPtsb/wA8fAOtS</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1425,17 +1191,13 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				PbxP6nh1NosFuAuNAIkFegyNAIsNsAuNAOsW
-				</data>
+				<data>PbxP6nh1NosFuAuNAIkFegyNAIsNsAuNAOsW</data>
 				<key>MatchBuild</key>
 				<string>17G7024</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
-				<data>
-				uAgAAIAx2zHJMdIPokGJzkEPtsb/wA8fAOtS
-				</data>
+				<data>uAgAAIAx2zHJMdIPokGJzkEPtsb/wA8fAOtS</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1443,15 +1205,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				PbxP6nh1JosFp/KXAIkFafOXAIsNn/KXAOs4
-				</data>
+				<data>PbxP6nh1JosFp/KXAIkFafOXAIsNn/KXAOs4</data>
 				<key>MatchOS</key>
 				<string>10.14.4</string>
 				<key>Replace</key>
-				<data>
-				uAgAAIAx2zHJMdIPokGJzkEPtsb/wA8fAOtc
-				</data>
+				<data>uAgAAIAx2zHJMdIPokGJzkEPtsb/wA8fAOtc</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1459,15 +1217,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				PbxP6nh1JosF12eYAIkFmWiYAIsNz2eYAOs4
-				</data>
+				<data>PbxP6nh1JosF12eYAIkFmWiYAIsNz2eYAOs4</data>
 				<key>MatchOS</key>
 				<string>10.14.5</string>
 				<key>Replace</key>
-				<data>
-				uAgAAIAx2zHJMdIPokGJzkEPtsb/wA8fAOtc
-				</data>
+				<data>uAgAAIAx2zHJMdIPokGJzkEPtsb/wA8fAOtc</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1475,17 +1229,13 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				iwViCo0AiQUkC40AiwVaCo0AiQUcC40A
-				</data>
+				<data>iwViCo0AiQUkC40AiwVaCo0AiQUcC40A</data>
 				<key>MatchBuild</key>
 				<string>17G65,17G66</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
-				<data>
-				iQViCo0AiQUkC40AiQVaCo0AiQUcC40A
-				</data>
+				<data>iQViCo0AiQUkC40AiQVaCo0AiQUcC40A</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1493,17 +1243,13 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				iwViAo0AiQUkA40AiwVaAo0AiQUcA40A
-				</data>
+				<data>iwViAo0AiQUkA40AiwVaAo0AiQUcA40A</data>
 				<key>MatchBuild</key>
 				<string>17G6029,17G6030</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
-				<data>
-				iQViAo0AiQUkA40AiQVaAo0AiQUcA40A
-				</data>
+				<data>iQViAo0AiQUkA40AiQVaAo0AiQUcA40A</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1511,17 +1257,13 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				iwVSC40AiQUUDI0AiwVKC40AiQUMDI0A
-				</data>
+				<data>iwVSC40AiQUUDI0AiwVKC40AiQUMDI0A</data>
 				<key>MatchBuild</key>
 				<string>17G7024</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
-				<data>
-				iQVSC40AiQUUDI0AiQVKC40AiQUMDI0A
-				</data>
+				<data>iQVSC40AiQUUDI0AiQVKC40AiQUMDI0A</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1529,15 +1271,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				SIsFNvKXAEiJBffylwCBPf3ylwC8T+p4
-				</data>
+				<data>SIsFNvKXAEiJBffylwCBPf3ylwC8T+p4</data>
 				<key>MatchOS</key>
 				<string>10.14.4</string>
 				<key>Replace</key>
-				<data>
-				iQU38pcAiQX58pcAiQUv8pcAiQXx8pcA
-				</data>
+				<data>iQU38pcAiQX58pcAiQUv8pcAiQXx8pcA</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1545,15 +1283,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				SIsFZmeYAEiJBSdomACBPS1omAC8T+p4
-				</data>
+				<data>SIsFZmeYAEiJBSdomACBPS1omAC8T+p4</data>
 				<key>MatchOS</key>
 				<string>10.14.5</string>
 				<key>Replace</key>
-				<data>
-				iQVnZ5gAiQUpaJgAiQVfZ5gAiQUhaJgA
-				</data>
+				<data>iQVnZ5gAiQUpaJgAiQVfZ5gAiQUhaJgA</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1561,17 +1295,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				uZkBAAAPMkjB4iCJxkgJ1rmYAQAADzJIweIgicBICcK/
-				WAIxBTHJRTHA
-				</data>
+				<data>uZkBAAAPMkjB4iCJxkgJ1rmYAQAADzJIweIgicBICcK/WAIxBTHJRTHA</data>
 				<key>MatchOS</key>
 				<string>10.13.6,10.14.x</string>
 				<key>Replace</key>
-				<data>
-				Zg8fhAAAAAAAZg8fhAAAAAAAZg8fhAAAAAAAZg8fhAAA
-				AAAAZg8fRAAA
-				</data>
+				<data>Zg8fhAAAAAAAZg8fhAAAAAAAZg8fhAAAAAAAZg8fhAAAAAAAZg8fRAAA</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1579,19 +1307,13 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				uZgBAAAPMkGJ10SJ+MHoCIPgH0iJBbyphQBBwe8OQYPn
-				AUiNPZaMXgDoSAIAAEiJw0iJHa6phQA=
-				</data>
+				<data>uZgBAAAPMkGJ10SJ+MHoCIPgH0iJBbyphQBBwe8OQYPnAUiNPZaMXgDoSAIAAEiJw0iJHa6phQA=</data>
 				<key>MatchBuild</key>
 				<string>17G65,17G66</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
-				<data>
-				SI09e4xeAOhqAgAASYnHSI09qYxeAOhbAgAASInDSIkd
-				wamFADHSTIn4SPfzSIkFoqmFAA8fQAA=
-				</data>
+				<data>SI09e4xeAOhqAgAASYnHSI09qYxeAOhbAgAASInDSIkdwamFADHSTIn4SPfzSIkFoqmFAA8fQAA=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1599,19 +1321,13 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				uZgBAAAPMkGJ10SJ+MHoCIPgH0iJBbyhhQBBwe8OQYPn
-				AUiNPUKEXgDoSAIAAEiJw0iJHa6hhQA=
-				</data>
+				<data>uZgBAAAPMkGJ10SJ+MHoCIPgH0iJBbyhhQBBwe8OQYPnAUiNPUKEXgDoSAIAAEiJw0iJHa6hhQA=</data>
 				<key>MatchBuild</key>
 				<string>17G6029,17G6030</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
-				<data>
-				SI09J4ReAOhqAgAASYnHSI09VYReAOhbAgAASInDSIkd
-				waGFADHSTIn4SPfzSIkFoqGFAA8fQAA=
-				</data>
+				<data>SI09J4ReAOhqAgAASYnHSI09VYReAOhbAgAASInDSIkdwaGFADHSTIn4SPfzSIkFoqGFAA8fQAA=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1619,19 +1335,13 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				uZgBAAAPMkGJ10SJ+MHoCIPgH0iJBSSphQBBwe8OQYPn
-				AUiNPYqPXgDoSAIAAEiJw0iJHRaphQA=
-				</data>
+				<data>uZgBAAAPMkGJ10SJ+MHoCIPgH0iJBSSphQBBwe8OQYPnAUiNPYqPXgDoSAIAAEiJw0iJHRaphQA=</data>
 				<key>MatchBuild</key>
 				<string>17G7024</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
-				<data>
-				SI09b49eAOhqAgAASYnHSI09nY9eAOhbAgAASInDSIkd
-				KamFADHSTIn4SPfzSIkFCqmFAA8fQAA=
-				</data>
+				<data>SI09b49eAOhqAgAASYnHSI09nY9eAOhbAgAASInDSIkdKamFADHSTIn4SPfzSIkFCqmFAA8fQAA=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1639,17 +1349,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				uZgBAAAPMkGJ1YnQwegIg+AfSIkFCmiQAEHB7Q5Bg+UB
-				SI09e2tmAOj2AgAASInDSIkF/GeQAA==
-				</data>
+				<data>uZgBAAAPMkGJ1YnQwegIg+AfSIkFCmiQAEHB7Q5Bg+UBSI09e2tmAOj2AgAASInDSIkF/GeQAA==</data>
 				<key>MatchOS</key>
 				<string>10.14.4</string>
 				<key>Replace</key>
-				<data>
-				SI09X2tmAOgXAwAASYnHSI09jWtmAOgIAwAASInDSIkd
-				DmiQADHSTIn4SPfzSIkF72eQAA8fAA==
-				</data>
+				<data>SI09X2tmAOgXAwAASYnHSI09jWtmAOgIAwAASInDSIkdDmiQADHSTIn4SPfzSIkF72eQAA8fAA==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1657,17 +1361,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				uZgBAAAPMkGJ1YnQwegIg+AfSIkFotGQAEHB7Q5Bg+UB
-				SI093HZmAOj2AgAASInDSIkFlNGQAA==
-				</data>
+				<data>uZgBAAAPMkGJ1YnQwegIg+AfSIkFotGQAEHB7Q5Bg+UBSI093HZmAOj2AgAASInDSIkFlNGQAA==</data>
 				<key>MatchOS</key>
 				<string>10.14.5</string>
 				<key>Replace</key>
-				<data>
-				SI09wHZmAOgXAwAASYnHSI097nZmAOgIAwAASInDSIkd
-				ptGQADHSTIn4SPfzSIkFh9GQAA8fAA==
-				</data>
+				<data>SI09wHZmAOgXAwAASYnHSI097nZmAOgIAwAASInDSIkdptGQADHSTIn4SPfzSIkFh9GQAA8fAA==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1675,15 +1373,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				JfwAAACD+BM=
-				</data>
+				<data>JfwAAACD+BM=</data>
 				<key>MatchOS</key>
 				<string>10.13.6,10.14.x</string>
 				<key>Replace</key>
-				<data>
-				JfAAAADrI5A=
-				</data>
+				<data>JfAAAADrI5A=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1691,17 +1385,13 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				gz2UlnAAAHQK
-				</data>
+				<data>gz2UlnAAAHQK</data>
 				<key>MatchBuild</key>
 				<string>17G65,17G66</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
-				<data>
-				60gPH4AAAAAA
-				</data>
+				<data>60gPH4AAAAAA</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1709,17 +1399,13 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				gz2UjnAAAHQK
-				</data>
+				<data>gz2UjnAAAHQK</data>
 				<key>MatchBuild</key>
 				<string>17G6029,17G6030</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
-				<data>
-				60gPH4AAAAAA
-				</data>
+				<data>60gPH4AAAAAA</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1727,17 +1413,13 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				gz3UlXAAAHQK
-				</data>
+				<data>gz3UlXAAAHQK</data>
 				<key>MatchBuild</key>
 				<string>17G7024</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
-				<data>
-				60gPH4AAAAAA
-				</data>
+				<data>60gPH4AAAAAA</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1745,15 +1427,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				gz3VWHsAAHQK
-				</data>
+				<data>gz3VWHsAAHQK</data>
 				<key>MatchOS</key>
 				<string>10.14.4</string>
 				<key>Replace</key>
-				<data>
-				60gPH4AAAAAA
-				</data>
+				<data>60gPH4AAAAAA</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1761,15 +1439,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				gz0VwXsAAHQK
-				</data>
+				<data>gz0VwXsAAHQK</data>
 				<key>MatchOS</key>
 				<string>10.14.5</string>
 				<key>Replace</key>
-				<data>
-				60gPH4AAAAAA
-				</data>
+				<data>60gPH4AAAAAA</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1777,15 +1451,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				icCB4v//8P+BygAAAQC5dwIAAA==
-				</data>
+				<data>icCB4v//8P+BygAAAQC5dwIAAA==</data>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
-				<data>
-				uXcCAAC4BgEHALoGAQcADx9AAA==
-				</data>
+				<data>uXcCAAC4BgEHALoGAQcADx9AAA==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1793,15 +1463,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				icCB4v//AP+BygAAAQC5dwIAAA==
-				</data>
+				<data>icCB4v//AP+BygAAAQC5dwIAAA==</data>
 				<key>MatchOS</key>
 				<string>10.14.4,10.14.5</string>
 				<key>Replace</key>
-				<data>
-				uXcCAAC4BgEHALoGAQcADx9AAA==
-				</data>
+				<data>uXcCAAC4BgEHALoGAQcADx9AAA==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1809,15 +1475,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				QVJURnJlcXVlbmN5AA==
-				</data>
+				<data>QVJURnJlcXVlbmN5AA==</data>
 				<key>MatchOS</key>
 				<string>10.13.6,10.14.x</string>
 				<key>Replace</key>
-				<data>
-				Q1BVRnJlcXVlbmN5AA==
-				</data>
+				<data>Q1BVRnJlcXVlbmN5AA==</data>
 			</dict>
 		</array>
 		<key>KernelXCPM</key>
@@ -1832,9 +1494,7 @@
 		<key>MLB</key>
 		<string>C02032109R5DC771H</string>
 		<key>ROM</key>
-		<data>
-		vFe6FfIf
-		</data>
+		<data>vFe6FfIf</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
